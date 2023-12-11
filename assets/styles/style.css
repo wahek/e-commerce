@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-color: #222;
+}
+
+.header_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+.header_left {
+    gap: 40px;
+    display: flex;
+    align-items: end;
+}
+.intro{
+    background-color: #F1E4E6;
+}
+.intro_center{
+    display: flex;
+}
+
+.intro_img {
+    width: 100%;
+}
+.intro_right{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.intro_text{
+    display: flex;
+    flex-direction: column;
+}
+.intro_text_top{
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.intro_text_bot{
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.intro_text_bit_end{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.categories{
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.categories_cell {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 360px;
+}
+.big_cell{
+    grid-column: span 3;
+    max-width: 1140px;
+}
+.categories_img{
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+}
+.categories_cell_text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
+}
+.categories_cell_text_top{
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.categories_cell_text_bot{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.categories_img_big{
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+}
+.categories_cell_bg{
+    position: absolute;
+    max-width: 360px;
+}
+.categories_cell_bg_big{
+    position: absolute;
+    max-width: 1140px;
+}
+.catalog{
+    padding: 96px;
+}
+.catalog_title{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    padding-bottom: 48px;
+}
+.catalog_title_main{
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.catalog_title_second{
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.catalog_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+.catalog_grid_cell{
+    background-color: #F8F8F8;;
+}
+.catalog_grid_cell_img{
+    max-width: 360px;
+}
+.catalog_grid_cell_text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 16px;
+    max-width: 315px;
+}
+.catalog_grid_cell_text_title{
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.catalog_grid_cell_text_inf{
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.catalog_grid_cell_text_price{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.catalog_button{
+    margin-top: 48px;
+    width: 212px;
+    height: 48px;
+    border: #FF6A6A solid 1px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catalog_button_text{
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: white;
+    border: none;
+}
+.catalog_grid_cell_img{
+    width: 100%;
+    max-width: 360px;
+}
