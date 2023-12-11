@@ -80,16 +80,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 360px;
+    position: relative;
 }
 .big_cell{
     grid-column: span 3;
     max-width: 1140px;
 }
 .categories_img{
-    position: relative;
     width: 100%;
-    max-width: 360px;
 }
 .categories_cell_text{
     position: absolute;
@@ -122,16 +120,15 @@
     width: 100%;
     max-width: 1140px;
 }
+
 .categories_cell_bg{
     position: absolute;
-    max-width: 360px;
-}
-.categories_cell_bg_big{
-    position: absolute;
-    max-width: 1140px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 22, 22, 0.70);
 }
 .catalog{
-    padding: 96px;
+    padding-top: 96px;
 }
 .catalog_title{
     display: flex;
@@ -207,7 +204,6 @@
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .catalog_button_text{
