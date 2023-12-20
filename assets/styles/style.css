@@ -24,7 +24,7 @@
     margin-right: auto;
 }
 .header_left {
-    gap: 25px;
+    gap: 41px;
     display: flex;
     align-items: end;
 }
@@ -182,9 +182,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-.catalog_grid_cell_img{
-    max-width: 360px;
-}
 .catalog_grid_cell_text{
     display: flex;
     flex-direction: column;
@@ -241,7 +238,7 @@
     max-width: 360px;
 }
 
-@media screen and (width < 1439px) {
+@media screen and (max-width: 1439px) and (min-width: 769px){
     .header_basket{
         padding-left: 17px;
     }
@@ -276,4 +273,82 @@
     }
 
 
+}
+
+@media screen and (max-width: 768px) {
+    .header-icon{
+        display: none;
+    }
+    .header_head{
+        padding: 18px 16px;
+    }
+    .intro_img{
+        display: none;
+    }
+    .intro_center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 363px;
+    }
+    .intro_text_top{
+        font-size: 38px;
+    }
+    .intro_text_bot{
+        font-size: 20px;
+    }
+    .intro_text_bit_end{
+        font-size: 20px;      
+    }
+    .intro_text_bot_all{
+        min-width: 0;
+    }
+    .intro_right{
+        margin-right: 0;
+    }
+    .categories{
+        padding: 64px 16px;
+        gap: 32px;
+        margin-top: 0;
+        grid-template-columns: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .big_cell{
+        min-height: 111px;
+        max-height: 150px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+    .categories_img_big{
+        position: absolute;
+        width: 741px;
+        height: 120px;
+    }
+    .catalog{
+        padding-top: 0;
+    }
+    .catalog_title{
+        gap: 3px;
+        padding-bottom: 65px;
+    }
+    .catalog_grid{
+        grid-template-columns: none;
+        margin: 0 8px;
+    }
+    .catalog_grid_cell_img{
+        width: 100%;
+    }
+    .catalog_grid_cell{
+        width: 100%;
+    }
+    .catalog_grid_cell_img{
+        max-width: none;
+    }
+    .catalog_button{
+        margin-top: 48px;
+        margin-bottom: 85px;
+    }
 }
