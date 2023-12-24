@@ -65,6 +65,7 @@
     background: #FFF;
     padding: 32px 0px;
     z-index: 1;
+    transition: 0.2s;
 }
 .menu-title{
     color: #F16D7F;
@@ -260,7 +261,8 @@
     margin-right: auto;
 }
 .catalog_grid_cell:hover .catalog-img__bg-active{
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 
 }
 .catalog_grid_cell:hover .categories-add{
@@ -315,8 +317,10 @@
 .catalog_button:hover .catalog_button_text{
     background: #F16D7F;
     color: #FFF;
+    transition: 0.2s;
 }
 .catalog_button:hover{
+    transition: 0.2s;
     background: #F16D7F;
 }
 
@@ -342,7 +346,7 @@
     justify-content: center;
 }
 .catalog-img__bg-active{
-    display: none;
+    opacity: 0.0;
     background: rgba(33, 22, 22, 0.70);
     position: absolute;
     width: 100%;
@@ -559,12 +563,14 @@
 }
 .messages-item:hover{
     background-color: #F16D7F;
+    transition: 0.2s;
 }
 .messages-icon{
     fill: black;
 }
 .messages-item:hover .messages-icon{
     fill: white;
+    transition: 0.2s;
 }
 
 
