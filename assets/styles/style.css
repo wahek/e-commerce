@@ -55,17 +55,20 @@
     text-align: center;
 }
 
-.menu-button:hover .menu {display: block;}
+.menu-button:hover .menu {
+    visibility: visible;
+    animation: ani 1.0s forwards;
+}
 .menu{
-    display: none;
+    visibility: hidden;
     position: fixed;
     top: 78px;
     right: 0px;
     width: 232px;
     background: #FFF;
     padding: 32px 0px;
-    z-index: 1;
-    transition: 0.2s;
+    z-index: 2;
+    opacity: 0;
 }
 .menu-title{
     color: #F16D7F;
@@ -92,6 +95,10 @@
 .menu-sub:first-child{
     padding-top: 12px;
 }
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
 
 .intro {
     background-color: #F1E4E6;
